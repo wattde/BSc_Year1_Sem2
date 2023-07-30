@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title></title>
+    <style>
+        .grey-frame {
+            border: 2px solid grey;
+            padding: 20px 100px;
+            width: 400px; 
+            height: 600px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="grey-frame">
+        <h1 style="font-size: 36px;">Car Registration</h1>
+        <form>
+            <label for="ownerName">Owner Name:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <br><br>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Sri Lanka</option>
+                <option value="SL">Sri Lanka</option>
+                <option value="India">India</option>
+                <option value="UK">United Kingdom</option>
+            
+                </select>
+               <br><br>
+            <label for="carmodel">Car Model:</label>
+            <input type="carmodel" id="carmodel" name="carmodel" required>
+            <br><br>
+            <label for="manufactureyear">Manufacture Year:</label>
+            <select id="manufactureyear" name="manufactureyear" required>
+                <option value="" disabled selected>Select Year</option>
+                <option value="2000">2000</option>
+                <option value="2002">2002</option>
+                <option value="2016">2016</option>
+            
+                </select>
+              <br><br>
+            <label>Transmission:</label>
+            <input type="radio" id="auto" name="transmission" value="auto" required>
+            <label for="auto">Auto</label>
+            <input type="radio" id="manual" name="transmission" value="manual" required>
+            <label for="manual">Manual</label>
+            <br><br>
+            <label for="other">Other:</label>
+            <br> <textarea id="other" name="other" rows="4" cols="30"></textarea>
+            <br><br>
+
+            
+           
+            <br><br>
+
+            <br>
+            <input type="checkbox" id="terms" name="terms" value="agreed" required>
+            <label for="terms">I agree to the terms and conditions</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> 
+        </form>
+    </div>
+</body>
+</html>

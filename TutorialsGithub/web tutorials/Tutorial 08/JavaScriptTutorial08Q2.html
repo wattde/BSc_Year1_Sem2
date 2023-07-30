@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<script>
+
+function calculateCircleArea(radius) {
+  const pi = 22 / 7;
+  const area = pi * radius * radius;
+  return area;
+}
+
+
+const radiusInput = prompt("Enter the radius of the circle:");
+const radius = parseFloat(radiusInput);
+
+
+if (!isNaN(radius) && radius > 0) {
+  
+  const area = calculateCircleArea(radius);
+  alert("The area of the circle with radius " + radius + " is: " + area.toFixed(2));
+} else {
+  alert("Invalid input! Please enter a valid positive number for the radius.");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+body {
+    background-image: url("lion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust the background-size property as needed */
+}
+.square {
+    width: 200px; /* Adjust the square size as needed */
+    height: 200px; /* Adjust the square size as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and transparency */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Your other CSS styles go here */
+
+h2 {
+    color: white; /* For example, white text color */
+}
+
+/* Add more styles as needed */

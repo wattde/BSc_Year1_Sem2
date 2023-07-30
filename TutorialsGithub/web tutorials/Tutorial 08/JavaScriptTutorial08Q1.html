@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <button id="redBtn">Red</button>
+  <button id="greenBtn">Green</button>
+  <button id="blueBtn">Blue</button>
+
+  <script>
+    
+    function changeBackgroundColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+   
+    function resetBackgroundColor() {
+      document.body.style.backgroundColor = "";
+    }
+
+    
+    document.getElementById("redBtn").addEventListener("mouseover", function() {
+      changeBackgroundColor("red");
+    });
+
+    document.getElementById("redBtn").addEventListener("mouseout", function() {
+      resetBackgroundColor();
+    });
+
+    document.getElementById("greenBtn").addEventListener("mouseover", function() {
+      changeBackgroundColor("green");
+    });
+
+    document.getElementById("greenBtn").addEventListener("mouseout", function() {
+      resetBackgroundColor();
+    });
+
+    document.getElementById("blueBtn").addEventListener("mouseover", function() {
+      changeBackgroundColor("blue");
+    });
+
+    document.getElementById("blueBtn").addEventListener("mouseout", function() {
+      resetBackgroundColor();
+    });
+  </script>
+</body>
+</html>
